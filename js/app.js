@@ -4,23 +4,6 @@ const AIRTABLE_TABLE = 'Table%201';
 
 const AIRTABLE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/${AIRTABLE_TABLE}`;
 
-const SUPABASE_KEY = "sb_publishable_lUq2yPmkTijaqyYDifTYFA_Es-Xi7Nb";
-
-const supabaseClient = supabase.createClient(
-  SUPABASE_URL,
-  SUPABASE_KEY
-);
-
-async function loadCourses() {
-
-  const { data, error } = await supabaseClient
-    .from("courses")
-    .select("*");
-
-  console.log(data);
-
-}
-
 async function fetchAllFromAirtable() {
   const records = [];
   let offset = null;
