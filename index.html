@@ -1,5 +1,79 @@
-<html>
-  <head>
-    <title>Aasim</title>
-  </head>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="site.title">DevMySkills - كورسات مجانية</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <div class="header-left">
+        <h1 class="logo">DevMySkills</h1>
+        <p class="tagline" data-i18n="site.tagline">جميع الكورسات المجانية في مكان واحد</p>
+      </div>
+      <div class="header-right">
+        <select id="langSwitcher" class="lang-select">
+          <option value="ar">🇸🇦 العربية</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="tr">🇹🇷 Türkçe</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="search-bar">
+        <input type="text" id="searchInput" data-i18n="search.placeholder" placeholder="ابحث عن كورس...">
+      </div>
+
+      <div class="filters">
+        <div class="filter-group">
+          <label for="filterLang" data-i18n="filters.language">اللغة</label>
+          <select id="filterLang"><option value="" data-i18n="filters.all">الكل</option></select>
+        </div>
+        <div class="filter-group">
+          <label for="filterCategory" data-i18n="filters.category">التصنيف</label>
+          <select id="filterCategory"><option value="" data-i18n="filters.all">الكل</option></select>
+        </div>
+        <div class="filter-group">
+          <label for="filterPlatform" data-i18n="filters.platform">المنصة</label>
+          <select id="filterPlatform"><option value="" data-i18n="filters.all">الكل</option></select>
+        </div>
+        <div class="filter-group">
+          <label for="filterLevel" data-i18n="filters.level">المستوى</label>
+          <select id="filterLevel"><option value="" data-i18n="filters.all">الكل</option></select>
+        </div>
+        <div class="filter-group check-group">
+          <label class="check-label">
+            <input type="checkbox" id="filterFree"> <span data-i18n="filters.freeOnly">مجاني فقط</span>
+          </label>
+          <label class="check-label">
+            <input type="checkbox" id="filterCert"> <span data-i18n="filters.certificate">بشهادة</span>
+          </label>
+        </div>
+        <button id="resetFilters" class="btn-reset" data-i18n="filters.reset">إعادة تعيين</button>
+      </div>
+      <div class="results-bar">
+        <span id="resultsCount">0</span> <span data-i18n="results.count">كورس متاح</span>
+      </div>
+    </section>
+
+    <section class="courses-grid" id="coursesGrid">
+      <div class="loading" data-i18n="course.loading">جاري التحميل...</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p data-i18n="footer.copyright">DevMySkills © 2026 - جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
