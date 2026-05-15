@@ -1,0 +1,34 @@
+{
+  "dir": "ltr",
+  "site": {
+    "title": "DevMySkills - Ücretsiz Kurslar",
+    "tagline": "Tüm ücretsiz kurslar tek bir yerde"
+  },
+  "search": {
+    "placeholder": "Kurs ara..."
+  },
+  "filters": {
+    "language": "Dil",
+    "category": "Kategori",
+    "platform": "Platform",
+    "level": "Seviye",
+    "all": "Tümü",
+    "freeOnly": "Sadece ücretsiz",
+    "certificate": "Sertifikalı",
+    "reset": "Sıfırla"
+  },
+  "results": {
+    "count": "kurs mevcut"
+  },
+  "course": {
+    "free": "Ücretsiz",
+    "paid": "Ücretli",
+    "certificate": "Sertifikalı",
+    "view": "Kursu Görüntüle",
+    "loading": "Yükleniyor...",
+    "noResults": "Aramanızla eşleşen kurs bulunamadı"
+  },
+  "footer": {
+    "copyright": "DevMySkills © 2026 - Tüm hakları saklıdır"
+  }
+}

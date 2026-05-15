@@ -1,0 +1,34 @@
+{
+  "dir": "rtl",
+  "site": {
+    "title": "DevMySkills - كورسات مجانية",
+    "tagline": "جميع الكورسات المجانية في مكان واحد"
+  },
+  "search": {
+    "placeholder": "ابحث عن كورس..."
+  },
+  "filters": {
+    "language": "اللغة",
+    "category": "التصنيف",
+    "platform": "المنصة",
+    "level": "المستوى",
+    "all": "الكل",
+    "freeOnly": "مجاني فقط",
+    "certificate": "بشهادة",
+    "reset": "إعادة تعيين"
+  },
+  "results": {
+    "count": "كورس متاح"
+  },
+  "course": {
+    "free": "مجاني",
+    "paid": "مدفوع",
+    "certificate": "بشهادة",
+    "view": "عرض الكورس",
+    "loading": "جاري التحميل...",
+    "noResults": "لا توجد كورسات تطابق البحث"
+  },
+  "footer": {
+    "copyright": "DevMySkills © 2026 - جميع الحقوق محفوظة"
+  }
+}
