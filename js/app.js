@@ -4,6 +4,29 @@ const AIRTABLE_TABLE = 'Table%201';
 
 const AIRTABLE_URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/${AIRTABLE_TABLE}`;
 
+let allCourses = [];
+let filtersData = { languages: [], categories: [], platforms: [], levels: [] };
+
+const $ = id => document.getElementById(id);
+const searchInput = $('searchInput');
+const filterLang = $('filterLang');
+const filterCategory = $('filterCategory');
+const filterPlatform = $('filterPlatform');
+const filterLevel = $('filterLevel');
+const filterFree = $('filterFree');
+const filterCert = $('filterCert');
+const resetBtn = $('resetFilters');
+const coursesGrid = $('coursesGrid');
+const resultsCount = $('resultsCount');
+
+function updateFirstOption() {
+  const allText = t('filters.all');
+  document.querySelectorAll('.filter-group select').forEach(sel => {
+    const first = sel.options[0];
+    if (first) first.textContent = allText;
+  });
+}
+
 async function fetchAllFromAirtable() {
   const records = [];
   let offset = null;
