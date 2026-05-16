@@ -69,7 +69,7 @@ function mapRecord(record) {
     free: !!f['Free'],
     certificate: !!f['Certificate'],
     duration: f['Duration'] || '',
-    level: f['Level'] || '',
+    level: (Array.isArray(f['Level']) ? (f['Level'][0] || '') : (f['Level'] || '')).trim(),
     language: f['Language'] || '',
     link: f['Course Link'] || '',
     thumbnail: thumbnailUrl,
