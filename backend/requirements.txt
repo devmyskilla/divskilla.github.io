@@ -3,3 +3,6 @@ flask-cors==5.*
 python-dotenv==1.*
 requests==2.*
 pyairtable==2.*
+beautifulsoup4==4.*
+lxml==5.*
+duckduckgo_search==7.*

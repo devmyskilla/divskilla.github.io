@@ -1,0 +1,29 @@
+{
+  "queries": [
+    "free online courses with certificate",
+    "best free courses 2026",
+    "free professional development courses",
+    "دورات مجانية اونلاين بشهادات",
+    "ücretsiz online kurslar sertifikalı",
+    "free coding bootcamp online",
+    "free business courses online",
+    "free marketing courses certificate",
+    "free programming courses beginner",
+    "free data science courses online",
+    "free AI courses online 2026",
+    "مجانية كورسات برمجة اونلاين",
+    "free graphic design courses",
+    "free project management courses",
+    "free leadership courses online"
+  ],
+  "exclude_domains": [
+    "udemy.com",
+    "coursera.org",
+    "edx.org",
+    "skillshare.com",
+    "linkedin.com",
+    "pluralsight.com",
+    "datacamp.com",
+    "codecademy.com"
+  ]
+}
