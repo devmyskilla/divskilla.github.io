@@ -1,0 +1,16 @@
+[
+  {
+    "name": "HP LIFE",
+    "type": "sitemap",
+    "url": "https://www.life-global.org/sitemap.xml",
+    "platform": "HP LIFE",
+    "course_url_pattern": "/course/"
+  },
+  {
+    "name": "freeCodeCamp",
+    "type": "sitemap",
+    "url": "https://www.freecodecamp.org/sitemap.xml",
+    "platform": "freeCodeCamp",
+    "course_url_pattern": "/learn/"
+  }
+]
